@@ -1,12 +1,12 @@
-package com.example.micro1.dao;
+package com.example.micro2.dao;
 
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class Micro1Dao {
+public class Micro2Dao {
 
     public String getMicroserviceName()
     {
-        return "micro1";
+        return "micro2";
     }
 }

@@ -1,18 +1,23 @@
-package com.example.micro1.service;
+package com.example.micro2.service;
 
-import com.example.micro1.dao.Micro1Dao;
+import com.example.micro2.dao.Micro2Dao;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 @Service
-public class Micro1Service {
+@Slf4j
+public class Micro2Service {
 
     @Autowired
-    Micro1Dao dao;
+    Micro2Dao dao;
 
     public String getMicroserviceName()
     {
         return dao.getMicroserviceName();
     }
+    private static final String EXCHANGE_NAME = "topic_logs";
+
+
 }
